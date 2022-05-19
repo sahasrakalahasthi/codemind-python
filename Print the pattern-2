@@ -1,0 +1,6 @@
+n=int(input())
+for i in range (65,n+65):
+    # inner loop for jth columns
+    for j in range(65,n+65):
+        print(chr(i),end=" ")
+    print()
