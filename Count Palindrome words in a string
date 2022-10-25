@@ -1,0 +1,9 @@
+s=input()
+c=0
+sen=s.split()
+for i in sen:
+    i=i.lower()
+    if i==i[::-1]:
+        c+=1
+print(c)
+    
