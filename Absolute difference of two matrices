@@ -1,0 +1,15 @@
+m=int(input())
+a,b=[],[]
+for i in range(m):  
+    r=list(map(int, input().split()))  
+    a.append(r) 
+for i in range(m):
+    r=list(map(int,input().split()))
+    b.append(r)
+mat=[]
+for i in range(m):
+    result=[]
+    for j in range(m):
+        res=abs(a[i][j]-b[i][j])
+        result.append(res)
+    print(*result)
