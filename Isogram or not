@@ -1,0 +1,3 @@
+s=input()
+s1=set(s)
+print(len(s1)==len(s))
