@@ -1,0 +1,13 @@
+m,n=map(int,input().split())
+a=[]
+for i in range(m):  
+    r=list(map(int, input().split()))  
+    a.append(r) 
+#print(a)
+even=[]
+for i in range(m):
+    e=0
+    for j in range(n):
+        e+=a[i][j]
+    even.append(e)
+print(max(even))
