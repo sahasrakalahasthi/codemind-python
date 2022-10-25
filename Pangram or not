@@ -1,0 +1,4 @@
+s=input()
+#print(s)
+s1=set((s.lower()).replace(" ",""))
+print(len(s)>=26)
