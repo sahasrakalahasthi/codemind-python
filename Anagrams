@@ -1,0 +1,6 @@
+from collections import Counter
+s1=input()
+s2=input()
+s1=s1.lower()
+s2=s2.lower()
+print(Counter(s1)==Counter(s2))
