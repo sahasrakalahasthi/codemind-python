@@ -1,0 +1,15 @@
+def vowelOrConsonant(x):
+    if (x == 'a' or x == 'e' or x == 'i' or
+        x == 'o' or x == 'u' or x == 'A' or
+        x == 'E' or x == 'I' or x == 'O' or
+        x == 'U'):
+        return 1
+    else:
+        return 0
+n=input()
+n=n.split()
+c=0
+for i in range(0,len(n)):
+    if vowelOrConsonant(n[i][0])==1 and vowelOrConsonant(n[i][len(n[i])-1])==0:
+        c+=1
+print(c)
