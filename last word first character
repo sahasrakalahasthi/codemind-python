@@ -1,0 +1,4 @@
+s=input()
+l=s.split()[-1] 
+#print(l)
+print(l[0])
