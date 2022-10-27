@@ -1,0 +1,5 @@
+s=input()
+s=s.split()
+for i in s:
+    mi,ma=min(i),max(i)
+    print(abs(ord(mi)-ord(ma)),end=" ")
