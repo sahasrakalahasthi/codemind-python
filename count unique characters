@@ -1,0 +1,18 @@
+s=input()
+s=s.replace(" ","")
+#print(s)
+res=""
+d={}
+for i in s:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+for k,v in d.items():
+    if v==1:
+        res+=k
+c=0
+for i in res:
+    if i.islower():
+        c+=1
+print(c)
