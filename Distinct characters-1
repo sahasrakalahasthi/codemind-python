@@ -1,0 +1,9 @@
+s=input()
+s=s.replace(" ","")
+res=""
+for i in s:
+    if i.islower():
+        res+=i
+res=sorted(set(res))
+for i in res:
+    print(i,end="")
