@@ -1,0 +1,5 @@
+s=input()
+s=s.split()
+ma=max(s[len(s)-1])
+mi=min(s[0])
+print(mi,ma)
