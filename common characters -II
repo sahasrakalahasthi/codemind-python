@@ -1,0 +1,20 @@
+s=input()
+s1=input()
+#print(s,s1)
+s=s.lower()
+s1=s1.lower()
+s=s.replace(" ","")
+s1=s1.replace(" ","")
+s=list(s)
+s1=list(s1)
+#print(s,s1)
+res=""
+for i in s1:
+    if i in s:
+        res+=i
+for i in s:
+    if i in s1:
+        res+=i
+res=set(res)
+res=sorted(res)
+print(len(res))
