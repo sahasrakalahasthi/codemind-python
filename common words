@@ -1,0 +1,10 @@
+s=input()
+s1=input()
+#print(s,s1)
+s=s.lower()
+s1=s1.lower()
+s=s.split()
+s1=s1.split()
+for i in s1:
+    if i in s:
+        print(i,end=" ")
