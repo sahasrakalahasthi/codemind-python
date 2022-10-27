@@ -1,0 +1,6 @@
+from collections import Counter
+s=input()
+s=s.replace(" ","")
+mi,ma=min(s),max(s)
+c=Counter(s)
+print(mi,c[mi],ma,c[ma])
