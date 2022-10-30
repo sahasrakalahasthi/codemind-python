@@ -1,0 +1,2 @@
+s=int(input())
+print(round(3.14*s*s,2))
