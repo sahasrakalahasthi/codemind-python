@@ -1,0 +1,16 @@
+n=int(input())
+a=list(map(int,input().split()))
+print(*sorted(a))
+
+***********************************************************************************************
+
+n=int(input())
+a=list(map(int,input().split()))
+c=0
+for i in range(len(a)):
+    if a[i]==0:
+        c+=1
+for i in range(0,c):
+    print(0,end=" ")
+for i in range(c,len(a)):
+    print(1,end=" ")
