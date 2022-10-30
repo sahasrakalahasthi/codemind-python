@@ -1,0 +1,17 @@
+def sort(s1):
+    rem = ''.join(ch for ch in s1 if ch!='a' and ch!='e' and ch!='o' and ch!='i' and ch!='u')
+    r=sorted(rem)
+    k=0
+    res=""
+    for i in range(0,len(s1)):
+        if s1[i]!='a' and s1[i]!='e' and s1[i]!='o' and s1[i]!='i' and s1[i]!='u':
+            res+=r[k]
+            k+=1
+        else:
+            res+=s1[i]
+    return res
+
+s=input()
+s=s.split()
+for i in s:
+    print(sort(i),end=" ")
