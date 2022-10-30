@@ -1,0 +1,12 @@
+import math as m
+def perfect(n):
+    r=m.sqrt(n)
+    if (int(r+0.5)**2)==n:
+        return True
+n=int(input())
+a=map(int,input().split())
+sum=0
+for i in a:
+    if perfect(i)==True:
+        sum+=i
+print(sum)
