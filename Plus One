@@ -1,0 +1,8 @@
+n=int(input())
+a=list(map(int,input().split()))
+res=" "
+for i in a:
+    res+=str(i)
+res=str(int(res)+1)
+for i in res:
+    print(i,end=" ")
