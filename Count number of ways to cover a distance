@@ -1,0 +1,10 @@
+def count(dist):
+    if dist<0:
+        return 0
+    if dist==0:
+        return 1
+    return (count(dist-1)+count(dist-2)+count(dist-3))
+
+
+n=int(input())
+print(count(n))
