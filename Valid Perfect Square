@@ -1,0 +1,11 @@
+import math as m
+def perfect(n):
+    r=m.sqrt(n)
+    if (int(r+0.5)**2) == n:
+        print("True")
+    else:
+        print("False")
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    perfect(n)
