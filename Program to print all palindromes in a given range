@@ -1,0 +1,9 @@
+def palin(n):
+    if n==n[::-1]:
+        print(n,end=" ")
+    
+
+m=int(input())
+n=int(input())
+for i in range(m,n+1):
+    palin(str(i))
