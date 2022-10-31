@@ -1,0 +1,9 @@
+def palin(n):
+    if n==n[::-1]:
+        print("True")
+    else:
+        print("False")
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    palin(str(n))
