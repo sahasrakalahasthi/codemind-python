@@ -1,0 +1,13 @@
+def digits(n):
+    sum=0
+    while n>0:
+        rem=n%10
+        sum+=rem
+        n=n//10
+    if sum>9:
+        digits(sum)
+    else:
+        print(sum)
+
+n=int(input())
+digits(n)
