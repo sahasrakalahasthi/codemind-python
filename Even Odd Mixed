@@ -1,0 +1,14 @@
+n=int(input())
+n=str(n)
+e,o=0,0
+for i in range(0,len(n)):
+    if int(n[i])%2==0:
+        e+=1
+    else:
+        o+=1
+if e>0 and o==0:
+    print("Even")
+elif o>0 and e==0:
+    print("Odd")
+else:
+    print("Mixed")
