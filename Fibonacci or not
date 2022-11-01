@@ -1,0 +1,8 @@
+import math as m
+def square(n):
+    r=m.sqrt(n)
+    return (int(r+0.5)**2)==n
+def fibonacci(n):
+    return square(5*n*n-4) or square(5*n*n+4)
+n=int(input())
+print(fibonacci(n)==True)
