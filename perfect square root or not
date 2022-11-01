@@ -1,0 +1,4 @@
+import math as m
+n=int(input())
+r=m.sqrt(n)
+print((int(r+0.5)**2)==n)
