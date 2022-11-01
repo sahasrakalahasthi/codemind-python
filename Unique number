@@ -1,0 +1,5 @@
+n=int(input())
+if (len(set(str(n))))==len(str(n)):
+    print("Unique Number")
+else:
+    print("Not Unique Number")
