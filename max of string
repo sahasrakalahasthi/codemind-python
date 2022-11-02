@@ -1,0 +1,3 @@
+s=input()
+r=sorted(s)
+print(r[len(r)-1])
