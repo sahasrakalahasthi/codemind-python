@@ -1,0 +1,7 @@
+s=input()
+s1=input()
+res=sorted(s+s1)
+r=""
+for i in res:
+    r+=i
+print(r)
