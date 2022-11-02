@@ -1,0 +1,13 @@
+t=int(input())
+for _ in range(t):
+    s=input()
+    res=" "
+    for c in s:
+        if c.isdigit():
+            res+=c
+    sum=0
+    res=res.replace(" ","")
+    if len(res)>=1:
+        print("Yes")
+    else:
+        print("No")
