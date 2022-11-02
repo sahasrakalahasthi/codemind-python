@@ -1,0 +1,10 @@
+s=input()
+res=" "
+for c in s:
+    if c.isdigit():
+        res+=c
+sum=0
+res=res.replace(" ","")
+for i in res:
+    sum+=int(i)
+print(sum)
