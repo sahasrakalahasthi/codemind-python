@@ -1,0 +1,12 @@
+def char(s):
+    letters='abcdefghijklmnopqrstuvwxyz'
+    index=[]
+    for i in letters:
+        if s.count(i)==1:
+            index.append(s.index(i))
+    if len(index)>0:
+        print(min(index))
+    else:
+        print("-1")
+s=input()
+char(s)
