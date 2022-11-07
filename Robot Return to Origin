@@ -1,0 +1,16 @@
+s=input()
+origin = {"X": 0, "Y": 0}
+for i in s:
+    if i=='U':
+        origin["X"]+=1
+    elif i=='D':
+        origin["X"]-=1
+    elif i=='L':
+        origin["Y"]+=1
+    elif i=='R':
+        origin["Y"]-=1
+sum=0
+for i in origin:
+    if origin[i]!=0:
+        sum+=1
+print(sum==0)
