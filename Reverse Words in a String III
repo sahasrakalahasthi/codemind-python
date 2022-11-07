@@ -1,0 +1,9 @@
+s=input()
+s=s.split()
+res=[]
+for i in range(len(s)):
+    w=s[i]
+    w=w[::-1]
+    res.append(w)
+r=' '.join(res)
+print(r)
