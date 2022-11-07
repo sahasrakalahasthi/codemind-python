@@ -1,0 +1,7 @@
+from collections import Counter
+s,s1=input().split()
+r,m=Counter(s),Counter(s1)
+if r&m==r:
+    print("True")
+else:
+    print("False")
