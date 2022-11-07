@@ -1,0 +1,16 @@
+s=input()
+a=input()
+d={}
+for i in s:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+res=' '
+for k,v in d.items():
+    if k==a:
+        res=v
+if res!=' ':
+    print(res)
+else:
+    print("-1")
