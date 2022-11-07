@@ -1,0 +1,10 @@
+def count(s):
+    c=0
+    for i in range(len(s)):
+        if (ord(s[i])>=65 and ord(s[i])<=91):
+            c+=1
+    print(c)
+
+s=input()
+s=s[0].upper()+s[1:]
+count(s)
