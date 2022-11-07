@@ -1,0 +1,15 @@
+s=input()
+v,c,d,b=0,0,0,0
+for i in range(len(s)):
+    if s[i]=='a' or s[i]=='e' or s[i]=='i' or s[i]=='o' or s[i]=='u' or s[i]=='A' or s[i]=='E' or s[i]=='I' or s[i]=='O' or s[i]=='U':
+        v+=1
+    elif s[i].isdigit():
+        d+=1
+    elif s[i]==' ':
+        b+=1
+    else:
+        c+=1
+print("Vowels:",v)
+print("Consonants:",c)
+print("Digits:",d)
+print("White spaces:",b)        
