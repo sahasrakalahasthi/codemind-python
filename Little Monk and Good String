@@ -1,0 +1,11 @@
+s=input()
+v='aeiou'
+#print(s)
+a,c=0,0
+for i in s:
+    if i in v:
+        a+=1
+    else:
+        a=0
+    c=max(c,a)
+print(c)
