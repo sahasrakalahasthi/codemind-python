@@ -1,0 +1,9 @@
+t=int(input())
+for _ in range(t):
+    n,m=map(int,input().split())
+    for i in range(0,m):
+        if ((i*i)%m==n):
+            print(i)
+            break
+    else:
+        print("-1")
