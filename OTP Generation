@@ -1,0 +1,9 @@
+import math as m
+s=input()
+res=""
+for i in range(len(s)):
+    r=int(s[i])
+    if r%2!=0:
+        #print(r,"*")
+        r=r*r
+        print(r,end="")
