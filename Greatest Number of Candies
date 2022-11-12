@@ -1,0 +1,10 @@
+n=int(input())
+a=list(map(int,input().split()))
+k=int(input())
+maxi=max(a)
+#print(maxi)
+for i in range(len(a)):
+    if (a[i]+k)>=maxi:
+        print("True",end=" ")
+    else:
+        print("False",end=" ")
