@@ -1,0 +1,6 @@
+n=int(input())
+a=list(map(int,input().split()))
+res=[]
+for i in range(len(a)):
+    res.append(a[i]*a[i])
+print(*sorted(res))
