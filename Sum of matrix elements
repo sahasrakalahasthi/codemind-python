@@ -1,0 +1,8 @@
+n=int(input())
+m=int(input())
+sum=0
+for _ in range(n):
+    a=list(map(int,input().split()))
+    for i in a:
+        sum+=i
+print(sum)
