@@ -1,0 +1,12 @@
+n=int(input())
+a=list(map(int,input().split()))
+z=[]
+for i in a:
+    if i==0:
+        z.append(i)
+res=[]
+for i in a:
+    if i!=0:
+        res.append(i)
+res.extend(z)
+print(*res)
