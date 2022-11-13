@@ -1,0 +1,26 @@
+def moveRobots (s1, s2):
+        l1=[]
+        l2=[]
+        for i in range(len(s1)):
+            if(s1[i]!='#'):
+                l1.append(i)
+            if(s2[i]!='#'):
+                l2.append(i)
+        for a,b in zip(l1,l2):
+            if(s1[a]!=s2[b]):
+                return 'No'
+        for i in range(len(l1)):
+            if(s1[l1[i]]=='A'):
+                if(l1[i]>=l2[i]):
+                    continue
+                else:
+                    return 'No'
+            else:
+                if(l1[i]<=l2[i]):
+                    continue
+                else:
+                    return 'No'
+        return 'Yes'
+s1=input()
+s2=input()
+print(moveRobots(s1,s2))
