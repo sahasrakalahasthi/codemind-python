@@ -1,0 +1,17 @@
+def days(a,n):
+    dtw=[0]*n
+    s=[]
+    for i in range(n-1,-1,-1):
+        if s==[]:
+            s.append(i)
+        else:
+            while s and a[s[-1]]<=a[i]:
+                s.pop()
+            dtw[i]=s[-1]-i if s!=[] else 0
+            s.append(i)
+    return dtw
+
+n=int(input())
+a=list(map(int,input().split()))
+res=days(a,n)
+print(*res)
