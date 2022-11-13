@@ -1,0 +1,9 @@
+m=list(map(int,input().split()))
+n=list(map(int,input().split()))
+a,b=0,0
+for i,j in zip(m,n):
+    if i>j:
+        a+=1
+    if j>i:
+        b+=1
+print(a,b)
