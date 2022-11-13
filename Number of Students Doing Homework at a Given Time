@@ -1,0 +1,10 @@
+n=int(input())
+a1=list(map(int,input().split()))
+m=int(input())
+a2=list(map(int,input().split()))
+k=int(input())
+c=0
+for i,j in zip(a1,a2):
+    if i<=k<=j:
+        c+=1
+print(c)
