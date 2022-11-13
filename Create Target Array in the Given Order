@@ -1,0 +1,8 @@
+n=int(input())
+nums=list(map(int,input().split()))
+m=int(input())
+index=list(map(int,input().split()))
+res=[]
+for i,j in zip(nums,index):
+    res.insert(j,i)
+print(*res)
