@@ -1,0 +1,10 @@
+n=int(input())
+a=list(map(int,input().split()))
+d={}
+for i in a:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+maxi=max(d.values())
+print(list(d.keys())[list(d.values()).index(maxi)])
