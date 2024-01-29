@@ -1,0 +1,4 @@
+t=int(input())
+for i in range(t):
+    m=int(input())
+    print("YES") if m>=1 and m<=4 else print("NO")

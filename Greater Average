@@ -1,0 +1,9 @@
+def average(a,b,c):
+    if ((a+b)/2)>c:
+        print("YES")
+    else:
+        print("NO")
+t=int(input())
+for _ in range(t):
+    a,b,c=map(int,input().split())
+    average(a,b,c)

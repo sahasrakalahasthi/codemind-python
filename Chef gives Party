@@ -1,0 +1,8 @@
+t=int(input())
+for i in range(t):
+    n,x,k=map(int,input().split())
+    res=(n*x)
+    if res<=k:
+        print("YES")
+    else:
+        print("NO")

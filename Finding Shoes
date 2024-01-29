@@ -1,11 +1,12 @@
 # cook your dish here
 def result(i):
     m,n=map(int,input().split())
-    c=0
-    for i in range(m,n+1):
-        if i%10==2 or i%10==3 or i%10==9:
-            c+=1
-    print(c)
+    if n>=m:
+        print(m)
+    else:
+        res=m+(m-n)
+        print(res)
+    
 t=int(input())
 for i in range(t):
     result(i)

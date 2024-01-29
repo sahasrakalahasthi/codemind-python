@@ -1,0 +1,14 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    a,b=map(int,input().split())
+    res=(a)/(b*b)
+    if(res<=18):
+        print(1)
+    elif res>=19 and res<=24:
+        print(2)
+    elif res>=25 and res<=29:
+        print(3)
+    elif res>=30:
+        print(4)
+    

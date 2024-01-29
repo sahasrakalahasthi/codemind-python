@@ -1,0 +1,9 @@
+def result(i):
+    m,n,k=map(int,input().split())
+    if(abs(n-k)>=m):
+        print("Yes")
+    else:
+        print("No")
+t=int(input())
+for i in range(t):
+    result(i)

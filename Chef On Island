@@ -1,0 +1,9 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    f,w,f1,w1,d=map(int,input().split())
+    res=min((f/f1),(w/w1))
+    if res<d:
+        print("NO")
+    else:
+        print("YES")

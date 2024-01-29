@@ -1,0 +1,22 @@
+# cook your dish here
+def result(a,b,c,d):
+    x=a+c
+    y=b+d
+    if b>a:
+        a=a+c
+    else:
+        b=b+c
+    if b>a:
+        a=a+d
+    else:
+        b=b+d
+    if(b>a):
+        print("S")
+    else:
+        print("N")
+        
+
+t=int(input())
+for i in range(t):
+    a,b,c,d=map(int,input().split())
+    result(a,b,c,d)

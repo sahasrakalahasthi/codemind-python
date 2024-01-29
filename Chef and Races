@@ -1,0 +1,11 @@
+# cook your dish here
+n=int(input())
+for i in range(n):
+    l=map(int,input().split())
+    res=len(set(l))
+    if res==4:
+        print(2)
+    elif res==3:
+        print(1)
+    else:
+        print(0)

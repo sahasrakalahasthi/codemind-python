@@ -1,0 +1,7 @@
+# cook your dish here
+c=input()
+res=c.lower()
+if res=='a' or res=='e' or res=='i' or res=='o' or res=='u':
+    print("Vowel")
+else:
+    print("Consonant")

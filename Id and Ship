@@ -1,0 +1,14 @@
+# cook your dish here
+t=int(input())
+l=[]
+for i in range(t):
+    l.append(input())
+for res in l:
+    if res=='b' or res=='B':
+        print("BattleShip")
+    elif res=='c'or res=='C':
+        print("Cruiser")
+    elif res=='d'or res=='D':
+        print("Destroyer")
+    elif res=='f'or res=='F':
+        print("Frigate")

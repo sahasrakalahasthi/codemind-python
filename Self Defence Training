@@ -1,0 +1,12 @@
+# cook your dish here
+def result(k,l):
+    c=0
+    for i in range(k):
+        if l[i]>=10 and l[i]<=60:
+            c+=1
+    return c
+n=int(input())
+for i in range(n):
+    k=int(input())
+    l=list(map(int,input().split()))
+    print(result(k,l))

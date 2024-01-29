@@ -1,0 +1,9 @@
+def result(i):
+    m=int(input())
+    if m<=15:
+        print("yes")
+    else:
+        print("no")
+t=int(input())
+for i in range(t):
+    result(i)

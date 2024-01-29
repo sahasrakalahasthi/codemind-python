@@ -1,0 +1,15 @@
+# cook your dish here
+def result(i):
+    n=int(input())
+    a=[int(x) for x in input().split()]
+    freq={}
+    for i in a:
+        if i in freq:
+            freq[i]+=1
+        else:
+            freq[i]=1
+    print(n-max(freq.values()))
+    
+t=int(input())
+for i in range(t):
+    result(i)

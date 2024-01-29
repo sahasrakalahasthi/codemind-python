@@ -1,0 +1,10 @@
+def cartrip(n):
+    if n<=300:
+        return 3000
+    return (n*10)
+
+t=int(input())
+for i in range(t):
+    n=int(input())
+    k=cartrip(n)
+    print(k)

@@ -1,0 +1,2 @@
+n=int(input())
+print("Yes") if n>=750 else print("No")

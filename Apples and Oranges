@@ -1,0 +1,3 @@
+k=int(input())
+m,n=map(int,input().split())
+print("YES") if(m+n)<=k else print("NO")
