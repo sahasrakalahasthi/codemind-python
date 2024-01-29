@@ -1,0 +1,17 @@
+# cook your dish here
+N = int(input())
+s = 0
+t = 0
+lead = 0
+for i in range(N):
+    S,T = map(int,input().split())
+    s += S
+    t += T
+    diff = s - t
+    if diff > lead:
+        lead = diff
+        winner = 1
+    if lead < abs(diff):
+        lead = abs(diff)
+        winner = 2
+print(winner,lead)

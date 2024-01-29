@@ -1,0 +1,15 @@
+# cook your dish here
+def result(i):
+    s=""
+    m=input()
+    n=input()
+    for i in range(5):
+        if m[i]==n[i]:
+            s+='g'
+        else:
+            s+='b'
+    print(s)       
+
+t=int(input())
+for i in range(t):
+    result(i)

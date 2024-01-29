@@ -1,0 +1,12 @@
+def result(i):
+    m,n=map(int,input().split())
+    if m==n:
+        print("ANY")
+    elif m>n:
+        print("SECOND")
+    elif m<n:
+        print("FIRST")
+        
+t=int(input())
+for i in range(t):
+    result(i)

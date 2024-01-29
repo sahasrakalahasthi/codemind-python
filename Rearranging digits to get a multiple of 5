@@ -1,0 +1,11 @@
+# cook your dish here
+def result(i):
+    n=int(input())
+    k=list(str(int(input())))
+    if '0' in k or '5' in k:
+        print("Yes")
+    else:
+        print("No")
+t=int(input())
+for i in range(t):
+    result(i)

@@ -1,0 +1,12 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    l=list(map(int,input().split()))
+    if(l[0]<=1000):
+        print("%.6f"%(l[0]*l[1]))
+    else:
+        a=l[0]*l[1]
+        b=(10*a)/100
+        c=a-b
+        print("%.6f"%c)
+    

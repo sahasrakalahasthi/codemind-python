@@ -1,0 +1,13 @@
+# cook your dish here
+def result(i):
+    c=0
+    n=int(input())
+    s=str(n)
+    if s==s[::-1]:
+        print("wins")
+    else:
+        print("loses")
+    
+t=int(input())
+for i in range(t):
+    result(i)

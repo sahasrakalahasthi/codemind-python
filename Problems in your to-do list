@@ -1,0 +1,12 @@
+def result(i):
+    res=0
+    n=int(input())
+    l=list(map(int,input().split()))
+    for i in l:
+        if i>=1000:
+            res+=1
+    print(res)
+
+t=int(input())
+for i in range(0,t):
+    result(i)

@@ -1,0 +1,11 @@
+a,b,c,d=map(int,input().split())
+res=0
+if a>=10:
+    res+=1
+if b>=10:
+    res+=1
+if c>=10:
+    res+=1
+if d>=10:
+    res+=1
+print(res)

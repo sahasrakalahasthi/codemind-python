@@ -1,0 +1,5 @@
+t=int(input())
+for i in range(t):
+    m,n=map(int,input().split())
+    res=(m*7)-n
+    print(res)

@@ -1,0 +1,15 @@
+# cook your dish here
+def weights(w,x,y,z):
+    if w==x or w==y or w==z:
+        print("YES")
+    elif (w==x+y) or (w==x+z) or (w==y+z) or (w==x+y+z):
+        print("YES")
+    else:
+        print("NO")
+    
+
+t=int(input())
+for _ in range(t):
+    w,x,y,z=map(int,input().split())
+    weights(w,x,y,z)
+    
